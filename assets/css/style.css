@@ -534,6 +534,24 @@ section {
   position: relative;
   overflow: hidden;
   z-index: 1;
+  height: 250px;
+}
+
+.portfolio .portfolio-wrap img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  object-position: center;
+}
+
+/* Exempt portfolio items with nested row layout */
+.portfolio .portfolio-item .row .portfolio-wrap {
+  height: auto;
+}
+
+.portfolio .portfolio-item .row .portfolio-wrap img {
+  height: auto;
+  object-fit: initial;
 }
 
 .portfolio .portfolio-wrap::before {
